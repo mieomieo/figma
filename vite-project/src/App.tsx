@@ -4,7 +4,9 @@ import OnlineCourse from "./pages/OnlineCourse";
 function App() {
   return (
     <>
-      <OnlineCourse />
+      <div className="flex justify-center  ">
+        <OnlineCourse />
+      </div>
     </>
   );
 }
