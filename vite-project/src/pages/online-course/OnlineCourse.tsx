@@ -1,5 +1,5 @@
-import { onlineCouses } from "../../be";
-import Card from "../components/Card";
+import { onlineCouses } from "../../../be";
+import Card from "../../components/Card";
 import "./index.scss";
 import { useEffect, useState } from "react";
 
@@ -24,14 +24,16 @@ const OnlineCourse = () => {
   }, []);
   return (
     <>
-      <div className="px-[194px] pt-[70px] pb-[30px] bg-[#FFFDF4]">
-        <div className="mb-10 w-[519px] ">
-          <h2 className="text-[45px] text-[#374639] mb-5">{data?.title}</h2>
+      <div className=" px-[194px] pt-[70px] pb-[30px] bg-[#FFFDF4]">
+        <div className="mb-10 lg:w-[519px] ">
+          <h2 className=" sm:text-[35px] lg:text-[45px]   text-[#374639] mb-5">
+            {data?.title}
+          </h2>
           <p className="text-[19px] text-[#3F514B]">{data?.description}</p>
         </div>
-        <div className="grid 2xl:grid-cols-4 2xl:gap-x-[23px] md:grid-cols-2 md:gap-x-[23px]  mb-10 ">
-          {data?.cards.map((item) => {
-            return <Card content={item} />;
+        <div className="grid  xl:grid-cols-4 xl:gap-x-[23px] lg:grid-cols-2 lg:gap-x-[23px] mb-10 ">
+          {data?.cards.map((item, index) => {
+            return <Card key={index} content={item} />;
           })}
         </div>
       </div>

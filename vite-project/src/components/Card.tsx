@@ -13,17 +13,13 @@ const Card = ({ content }: Props) => {
   const { title, description, image, price, sale, lessons } = content;
   return (
     <>
-      <div className="w-[365px] md:mb-10 sm:mb-10">
+      <div className=" md:mb-10 sm:mb-10">
         <div>
-          <img
-            className="w-object-contain md:object-scale-down "
-            src={image}
-            alt=""
-          />
+          <img src={image} alt="" />
         </div>
         <div className="mt-[18px]">
           <h3 className="mb-2 text-[#414F42]">{title}</h3>
-          <p className="mb-[6px] text-[#3F514B] w-[308px]">{description}</p>
+          <p className="mb-[6px] text-[#3F514B]">{description}</p>
           <div className="mb-5">
             <span className="line-through mr-[6px] text-[#72776C] text-[13px]">
               ${price}
@@ -32,7 +28,7 @@ const Card = ({ content }: Props) => {
           </div>
           <div>
             {lessons.map((lesson, index) => (
-              <div className="lesson border-b-[1px] p-[3px]">
+              <div key={index} className="lesson border-b-[1px] p-[3px]">
                 <span className="text-[15px] mr-6 text-[#72776C] ">
                   {`WEEK ${index + 1}`}
                 </span>

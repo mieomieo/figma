@@ -1,14 +1,14 @@
 import "./App.css";
-import FloralDecor from "./pages/FloralDecor";
-import OnlineCourse from "./pages/OnlineCourse";
+import FloralDecor from "./pages/floral-decor/FloralDecor";
+import OnlineCourse from "./pages/online-course/OnlineCourse";
 
 function App() {
   return (
     <>
-      <div className="section-1 mb-36">
+      <div className=" poppins-font section-1 mb-36">
         <OnlineCourse />
       </div>
-      <div className="section-2">
+      <div className=" instrument-font section-2 mb-36">
         <FloralDecor />
       </div>
     </>
