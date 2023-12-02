@@ -21,9 +21,9 @@ const DropDown = ({ data }: Props) => {
         <ul>
           {data &&
             Object.entries(data).map(([key, value]) => (
-              <div className="border-t-[1px] p-[18px] ">
+              <div className="border-t-[1px] p-[18px]  ">
                 <div
-                  className="flex justify-between"
+                  className="flex justify-between cursor-pointer"
                   onClick={() => handleToggle(key)}
                 >
                   <li key={key} className="text-[#462B20] text-[26px]">
