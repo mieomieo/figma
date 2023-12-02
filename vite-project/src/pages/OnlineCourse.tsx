@@ -29,7 +29,7 @@ const OnlineCourse = () => {
           <h2 className="text-[45px] text-[#374639] mb-5">{data?.title}</h2>
           <p className="text-[19px] text-[#3F514B]">{data?.description}</p>
         </div>
-        <div className="flex space-x-[23px] mb-10 ">
+        <div className="grid 2xl:grid-cols-4 2xl:gap-x-[23px] md:grid-cols-2 md:gap-x-[23px]  mb-10 ">
           {data?.cards.map((item) => {
             return <Card content={item} />;
           })}

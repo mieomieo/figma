@@ -13,9 +13,13 @@ const Card = ({ content }: Props) => {
   const { title, description, image, price, sale, lessons } = content;
   return (
     <>
-      <div className="">
-        <div className="w-[365px] ">
-          <img src={image} alt="" />
+      <div className="w-[365px] md:mb-10 sm:mb-10">
+        <div>
+          <img
+            className="w-object-contain md:object-scale-down "
+            src={image}
+            alt=""
+          />
         </div>
         <div className="mt-[18px]">
           <h3 className="mb-2 text-[#414F42]">{title}</h3>
