@@ -18,8 +18,8 @@ const FloralDecor = () => {
           {data?.title}
         </h2>
         <div className="mb-[66px]">
-          <div className="grid md:grid-cols-1 lg:grid-cols-2 place-items-center ">
-            <div className="w-[60%]">
+          <div className="grid md:grid-cols-1 lg:grid-cols-2 justify-items-center">
+            <div className="w-[60%] place-items-center mt-20 ">
               <img
                 src="https://s3-alpha-sig.figma.com/img/cb03/02c4/23c7b2e265bc5524b5a09b80648692a1?Expires=1702252800&Signature=jkYSJueEMF3NnDeIcVPXppXIEw-hZb37X08BjNmRD8T3nnBni8jIqRwWxryaNehTZfpiGSRiOgmwda2X82BJxNn5WlOIz6lG56c5lJsAlRRNQENNxokZhHT~WALB-xCuI0ONU9U1ydHwM~tU32~iHLCphG-h3ryoklua3pimBumO7f~EncY3XB25B6AfPd3DmOERQzOnM0chAJe9B05UmSLfTOH-15m9hmH0zeAEKTh~s5vRrtMKvfdCCbpMU96HV19ASuDWZ5bCHyuN3CSHdPQ~EKdw5982hdFAHoudoEAcpfkq1bNYb~xOCJeUyXdI~8e~fLQ8REkU89Haw-JIuQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                 alt=""
